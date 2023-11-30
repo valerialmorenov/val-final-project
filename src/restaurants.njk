@@ -6,13 +6,15 @@
 
 {% block content %}
   <article class="container">
+    {% for restaurant in restaurants.restaurants %}
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-3 col-md-6">
           <img src="../restaurants/{{ restaurant.image }}" alt="" class="img-fluid mb-4">
       </div>
       <div class="col-sm-8">
-          <h1></h1>
+          <h1>{{ restaurant.name }}</h1>
           <p></p>
+        {% endfor %}
       </div>
     </div>
   </article>

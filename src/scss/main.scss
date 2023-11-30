@@ -21,6 +21,43 @@
 // Import partials
 @import 'nav';
 
-h3 {
-  font-size: 1.5rem;
+body {
+  background: #fbe6d3;
 }
+
+p, ul, ol, dl {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  margin-bottom: 12px;
+  padding-left: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Space Mono', monospace;
+  font-family: 'Ubuntu', sans-serif;
+  padding-left: 10px;
+}
+
+h1 {
+  font-size: 2.7rem;
+  line-height: 3.1rem;
+  margin: 18px 0;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin: 16px 0;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin: 25px 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
