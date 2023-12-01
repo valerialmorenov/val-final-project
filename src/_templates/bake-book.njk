@@ -9,17 +9,13 @@
 {% block content %}
   <article class="container">
     <div class="row">
-      {% for landmark in austin.landmarks %}
       <div class="col-sm-4">
-          <img src="img/img-austin/landmarks/{{ landmark.image }}" alt="" class="card-img-top">
+          <img src="../img/{{ slug }}.jpg" alt="" class="img-fluid mb-4">
       </div>
       <div class="col-sm-8">
-          <h1>{{ landmark.name }}</h1>
-          <p>{{ landmark.description }}</p>
+          <h1>{{ title }}</h1>
+          <p>{{ blurb | safe }}</p>
       </div>
-      {% endfor %}
     </div>
   </article>
 {% endblock %}
-
-img/img-austin/landmarks/{{ landmark.image }}
