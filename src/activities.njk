@@ -1,0 +1,19 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Austin Activities{% endblock %}
+
+{% block page_description %}Activities for all ages{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h2>Acitivities loop</h2>
+  <p>This loops through data that came from a Google Sheets example.</p>
+  <hr>
+  {% for activity in austin.activities %}
+    <h3>{{ activity.activity }}</h3>
+    <p>{{ activity.date_time }}</p>
+    <p><a href="{{ activity.url }}" target="_blank">{{ activity.address }}</a></p>
+    <hr>
+  {% endfor %}
+</div>
+{% endblock %}

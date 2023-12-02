@@ -10,6 +10,14 @@
   <p>Intro text here.</p>
   <h2>Landmarks loop</h2>
   <p>This loops through data that came from a Google Sheets example.</p>
+  <div class="row">
+    {% for landmark in austin.landmarks %}
+      <div class="col">
+        <img src="img/img-austin/landmarks/{{ landmark.image }}" alt="" class="img-fluid">
+        <h3><a href="landmarks/{{ landmark.slug }}.html">{{ landmark.name }}</a></h3>
+      </div>
+    {% endfor %}
+  </div>
 </div>
 <div class="container">
   <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -23,16 +31,6 @@
       </div>
     </div>
   </div>
-  {% endfor %}
-</div>
-  <h2>Acitivities loop</h2>
-  <p>This loops through data that came from a Google Sheets example.</p>
-  <hr>
-  {% for activity in austin.activities %}
-    <h3>{{ activity.activity_name }}</h3>
-    <p>{{ activity.date_time }}</p>
-    <p><a href="{{ activity.url }}" target="_blank">{{ activity.address }}</a></p>
-    <hr>
   {% endfor %}
 </div>
 {% endblock %}

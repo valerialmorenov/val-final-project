@@ -28,6 +28,13 @@
       "array": "books",
       "slug": "slug",
       "path": "books"
+    },
+    {
+      "template":"bake-landmarks",
+      "data":"austin",
+      "array":"landmarks",
+      "slug":"slug",
+      "path":"landmarks"
     }
   ]
 }
