@@ -9,11 +9,18 @@
   <h2>Acitivities loop</h2>
   <p>This loops through data that came from a Google Sheets example.</p>
   <hr>
+  <div class="row">
   {% for activity in austin.activities %}
-    <h3>{{ activity.activity }}</h3>
-    <p>{{ activity.date_time }}</p>
-    <p><a href="{{ activity.url }}" target="_blank">{{ activity.address }}</a></p>
-    <hr>
+  <div class="col-sm-6 col-lg-4 mb-3 mb-sm-0">
+    <div class="card text-bg-light mb-4">
+      <div class="card-body">
+        <h5 class="card-title">{{ activity.activity }}</h5>
+        <h6 class="card-captain">{{ activity.date_time }}</h6>
+        <p class="card-text">{{ activity.address }}</p>
+        <a href="{{ activity.url }}" >Source</a>
+      </div>
+    </div>
+  </div>
   {% endfor %}
 </div>
 {% endblock %}
