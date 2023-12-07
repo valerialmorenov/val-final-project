@@ -6,6 +6,7 @@
 
 {% block content %}
 <div class="container">
+  <h1>Eat Austin</h1>
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -116,13 +117,13 @@
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
-    <h5 id="offcanvasRightLabel">Eat Austin</h5>
+    <h4 id="offcanvasRightLabel">Eat Austin</h4>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
     {% for restaurant in restaurants.restaurants %}
     <h5>{{ restaurant.name }}</h5>
-    <p>{{ restaurant.category }} | {{ restaurant.address }}</p>
+    <h6>{{ restaurant.category }} | {{ restaurant.address }}</h6>
     {% endfor %}
   </div>
   </div>

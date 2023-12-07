@@ -6,7 +6,7 @@
 
 {% block page_title %}{{ name }}{% endblock %}
 
-{% block page_description %}{{ name }} | {{ established }}{% endblock %}
+{% block page_description %}{{ name }}{% endblock %}
 
 {% block content %}
   <article class="container">
@@ -15,8 +15,9 @@
           <img src="../img/img-austin/landmarks/{{ image }}" alt="" class="img-fluid mb-4">
       </div>
       <div class="col-sm-8">
-          <h1>{{ name }}</h1>
-          <p>{{ location }}</p>
+          <h1><a href="{{ url }}">{{ name }}</a></h1>
+          <h3>{{ location }} | {{ established }}</h3>
+          <p>{{ description | safe }}</p>
       </div>
     </div>
   </article>

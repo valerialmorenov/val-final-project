@@ -6,8 +6,8 @@
 
 {% block content %}
 <div class="container">
-  <h2>Acitivities loop</h2>
-  <p>This loops through data that came from a Google Sheets example.</p>
+  <h1>Activities Around Town</h1>
+  <p>Events and activities for all ages.</p>
   <hr>
   <div class="row">
   {% for activity in austin.activities %}
@@ -16,7 +16,7 @@
       <div class="card-body">
         <h5 class="card-title">{{ activity.activity }}</h5>
         <h6 class="card-captain">{{ activity.date_time }}</h6>
-        <p class="card-text">{{ activity.address }}</p>
+        <h6 class="card-text">{{ activity.address }}</h6>
         <a href="{{ activity.url }}" >Source</a>
       </div>
     </div>
